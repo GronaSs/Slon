@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Моя Работа</title>
+    <style>
+      .div1 {
+        background-image: url(Antilop.jpg); 
+        position: absolute; 
+        height: 170px; 
+        width: 300px;
+        margin-left: 1200px;
+        background-size: 100% 100%;
+      }
+      .div2 {
+        background-image: url(begemot.jpg); 
+        position: absolute; 
+        height: 170px; 
+        width: 300px;
+        background-size: 100% 100%;
+        margin-top: 700px;
+        margin-left: 300px;
+      }
+      .div3 {
+        background-image: url(korova.jpg); 
+        position: absolute; 
+        height: 170px; 
+        width: 300px;
+        background-size: 100% 100%;
+        margin-top: 500px;
+      }
+      .div4 {
+        background-image: url(elephant.jpg); 
+        position: absolute; 
+        height: 170px; 
+        width: 300px;
+        background-size: 100% 100%;
+        margin-top: 300px;
+        margin-left: 100px;
+      }
+      .div5 {
+        background-image: url(jiraf.jpg); 
+        position: absolute; 
+        height: 170px; 
+        width: 300px;
+        background-size: 100% 100%;
+        margin-left: 1200px;
+        margin-top: 300px;
+      }
+      .div6 {
+        background-image: url(giena.jpg);
+        position: absolute; 
+        height: 170px; 
+        width: 300px;
+        background-size: 100% 100%;
+        margin-left: 1200px;
+        margin-top: 500px;
+      }
+      .div7 {
+      background-image: url(nosorog.jpg); 
+      position: absolute; 
+      height: 170px; 
+      width: 300px;
+      background-size: 100% 100%;
+      margin-left: 1000px;
+      margin-top: 700px;
+      }
+      .div8 {
+      background-image: url(zebra.jpg); 
+      position: absolute; 
+      height: 170px; 
+      width: 300px;
+      background-size: 100% 100%;
+      margin-left: 700px;
+      }
+      .div9 {
+      background-image: url(lion.jpg); 
+      position: absolute; 
+      height: 170px; 
+      width: 300px;
+      background-size: 100% 100%;
+      margin-left: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h2 class="score_text" style="display: none">100</h2></div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="text-center text" style="position: absolute; margin-top: 350px; margin-left: 550px; display: none">
+      <h1>Где находится жираф?</h1>
+    </div>
+    <div class="div6"></div>
+    <div class="div7"></div>
+    <div class="div8"></div>
+    <div class="div9"></div>
+    <button class="button" style="display: none">Ещё раз</button>
+    
+    <script>
+      let lol = function(){
+        document.querySelector(".div1").style.background = "black";
+        document.querySelector(".div2").style.background = "black";
+        document.querySelector(".div3").style.background = "black";
+        document.querySelector(".div4").style.background = "black";
+        document.querySelector(".div5").style.background = "black";
+        document.querySelector(".div6").style.background = "black";
+        document.querySelector(".div7").style.background = "black";
+        document.querySelector(".div8").style.background = "black";
+        document.querySelector(".div9").style.background = "black";
+        document.querySelector(".text").style.display = "block";
+        document.querySelector(".score_text").style.display = "block";
+        document.querySelector(".button").style.display = "block";
+      }
+      setTimeout(lol, 500);
+
+      let score = 100
+
+      document.querySelector(".div1").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div1").style.backgroundImage = "url('Antilop.jpg')"
+        document.querySelector(".div1").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div2").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div2").style.backgroundImage = "url('begemot.jpg')"
+        document.querySelector(".div2").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div3").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div3").style.backgroundImage = "url('korova.jpg')"
+        document.querySelector(".div3").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div4").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div4").style.backgroundImage = "url('elephant.jpg')"
+        document.querySelector(".div4").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div6").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div6").style.backgroundImage = "url('giena.jpg')"
+        document.querySelector(".div6").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div7").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div7").style.backgroundImage = "url('nosorog.jpg')"
+        document.querySelector(".div7").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div8").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div8").style.backgroundImage = "url('zebra.jpg')"
+        document.querySelector(".div8").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div9").onclick = function(){
+        alert("Не правильно!")
+        document.querySelector(".div9").style.backgroundImage = "url('lion.jpg')"
+        document.querySelector(".div9").style.backgroundSize = "100% 100%"
+        score = score - 20
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".div5").onclick = function(){
+        document.querySelector(".div5").style.backgroundImage = "url('jiraf.jpg')"
+        document.querySelector(".div5").style.backgroundSize = "100% 100%"
+        score = score + 100
+        document.querySelector(".score_text").innerHTML = score;
+      }
+      document.querySelector(".button").onclick = function(){
+        document.querySelector(".div5").style.backgroundImage = "url('jiraf.jpg')"
+        document.querySelector(".div5").style.backgroundSize = "100% 100%"
+        document.querySelector(".div9").style.backgroundImage = "url('lion.jpg')"
+        document.querySelector(".div9").style.backgroundSize = "100% 100%"
+        document.querySelector(".div8").style.backgroundImage = "url('zebra.jpg')"
+        document.querySelector(".div8").style.backgroundSize = "100% 100%"
+        document.querySelector(".div7").style.backgroundImage = "url('nosorog.jpg')"
+        document.querySelector(".div7").style.backgroundSize = "100% 100%"
+        document.querySelector(".div6").style.backgroundImage = "url('giena.jpg')"
+        document.querySelector(".div6").style.backgroundSize = "100% 100%"
+        document.querySelector(".div4").style.backgroundImage = "url('elephant.jpg')"
+        document.querySelector(".div4").style.backgroundSize = "100% 100%"
+        document.querySelector(".div3").style.backgroundImage = "url('korova.jpg')"
+        document.querySelector(".div3").style.backgroundSize = "100% 100%"
+        document.querySelector(".div2").style.backgroundImage = "url('begemot.jpg')"
+        document.querySelector(".div2").style.backgroundSize = "100% 100%"
+        document.querySelector(".div1").style.backgroundImage = "url('Antilop.jpg')"
+        document.querySelector(".div1").style.backgroundSize = "100% 100%"
+        setTimeout(lol, 500);
+      }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
